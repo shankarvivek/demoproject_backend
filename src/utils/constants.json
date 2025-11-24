@@ -1,0 +1,20 @@
+{
+    "welcomeNote": "WELCOME TikTokShop Demo project...",
+    "responseMessages": {
+        "successMessages": {
+            "Success": "Success"
+        },
+        "errorMessages": {
+            "something_went_wrong": "Something went wrong..",
+            "database_error": "Database error.",
+            "dataRequiredToProcess": "Data required to process..",
+            "tryCatchError": "Try catch error... ",
+            "unauthorizedUser": "Unauthorized user."
+        }
+    },
+    "compareWords": {
+        "RECEIVED": "RECEIVED",
+        "CALCULATED": "CALCULATED",
+        "internalPartnerIDAddingQuery": "c.internal_partner_id = ?"
+    }
+}

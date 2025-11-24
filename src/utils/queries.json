@@ -1,0 +1,10 @@
+{
+    "queries": {
+        "fetchCommissions": "SELECT COUNT(*) totalCount, COALESCE(SUM(c.commission_amount),0) totalAmount FROM Commissions c ",
+        "fetchAllData": "SELECT c.commissionsID commissionId, c.order_id orderId, c.internal_partner_id internalPartnerId, c.commission_rate commissionRate, c.commission_amount commissionAmount, c.status, c.createdAt, o.external_order_id externalOrderId FROM Commissions c LEFT JOIN Orders o ON o.orderID = c.order_id ",
+        "insertOrders": "INSERT INTO Orders (external_order_id, affiliate_id, amount, status) VALUES (?, ?, ?, ?)",
+        "fetchLatestOrderID": "SELECT orderID FROM Orders ORDER BY createdAt DESC LIMIT 1;",
+        "fetchInternalPartnerData": "SELECT tiktok_affirmation, internal_id FROM demo_tiktok_internal_partner_id;",
+        "insertCommissions": "INSERT INTO Commissions (order_id, internal_partner_id, commission_rate, commission_amount, status) VALUES (?, ?, ?, ?, ?);"
+    }
+}
