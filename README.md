@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Demoproject_backend
 
 
@@ -14,3 +15,6 @@ Install dependencies with `npm install`, then run `cp .env.example .env` and upd
 The backend exposes a POST endpoint `/api/orders/receive` that simulates a TikTok Shop webhook: it saves the order, maps the affiliate ID to an internal partner ID, calculates a 10% commission, and stores the commission record.
 
 A GET endpoint `/api/reports/commissions` provides a paginated commission report, including totals, enabling the frontend dashboard to display order and commission data. This backend uses Node.js, Express, MySQL, dotenv, and direct SQL queries.
+=======
+# demoproject_backend
+>>>>>>> f7e3814c43abda1f000263e680e8165b7464021d
