@@ -15,6 +15,6 @@
     "compareWords": {
         "RECEIVED": "RECEIVED",
         "CALCULATED": "CALCULATED",
-        "internalPartnerIDAddingQuery": "c.internal_partner_id = ?"
+        "internalPartnerIDAddingQuery": "AND c.internal_partner_id = ?"
     }
 }
